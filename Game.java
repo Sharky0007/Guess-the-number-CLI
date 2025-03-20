@@ -21,8 +21,6 @@ public class Game {
             msg = "Great! You have selected the Hard difficulty level.";
         }
         System.out.println(msg);
-        System.out.println("Let's start the game!");
-        System.out.println();
     }
 
 // GUESS THE NUMBER AND RETURN CORRECT OR INCORRECT MESSAGE BASED ON THE INPUT:
@@ -68,9 +66,9 @@ public class Game {
 
 // PLAY THE GAME AGAIN:
     public void replayGame(){
-        int replay = 0;
-        while(replay==0){
-            System.out.print("Do you want to play again?(0 to replay and 4 to quit): ");
+        int replay = -1;
+        while(replay!=0){
+            System.out.print("Do you want to play again?(0 to quit): ");
             replay = sc.nextInt();  
             System.out.println();
             choice();
