@@ -44,6 +44,9 @@ public class Game {
             System.out.println("Congratulations! You guessed the correct number in " + count + " attempts." );
             break;
            }
+         if(count == chance){
+            System.out.println("Your chances are over");
+         }
           count++;
         }
       }
@@ -68,9 +71,13 @@ public class Game {
     public void replayGame(){
         int replay = -1;
         while(replay!=0){
-            System.out.print("Do you want to play again?(0 to quit): ");
+            System.out.print("Do you want to play again?(Press any number to continue or 0 to quit): ");
             replay = sc.nextInt();  
             System.out.println();
+            if(replay==0){
+                System.out.println("You Quit the Game.");
+                break;
+            }
             choice();
             guessGame();
         }
