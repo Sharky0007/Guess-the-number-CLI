@@ -51,9 +51,9 @@ Congratulations! You guessed the correct number in 4 attempts.
 ```
 
 # TODO
-[] Correct the replay and quit logic.
-[] Implement the timer to check how much time user take to guess the number.
-[] Display proper messages for GAME OVER.
-[] Keep tracking of user high score.
-[] If the user chances over then we need to display message `Your chance is over, Do you want to play again?`
-[x] After user press 0 the game is still running for one more time, that we need to fix.
+- [ ] Correct the replay and quit logic.
+- [ ] Implement the timer to check how much time user take to guess the number.
+- [ ] Display proper messages for GAME OVER.
+- [ ] Keep tracking of user high score.
+- [x] If the user chances over then we need to display message `Your chance is over, Do you want to play again?`
+- [x] After user press 0 the game is still running for one more time, that we need to fix.
